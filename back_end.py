@@ -11,6 +11,17 @@ load_dotenv()
 OPENWEATHERMAP_API_ENDOINT = "https://api.openweathermap.org/data/2.5/forecast"
 OPENWEATHERMAP_API_KEY = os.getenv("OPENWEATHERMAP_API_KEY")
 
+"""
+- Study of the data returned from openweathermap API:
+
+    1. Get the total number of intervals/observations (every 3 hours) for 5 days, by default theres 40 intervals
+
+    2. Calculate the number of intervals (observations) per day (dividing by 24 cz 24 hours a day),
+       1 interval every 3 hours, so 1 day (24h) / 3h = 8, so there's 8 intervals per day   
+       
+"""
+INTERVALS_PER_DAY = 8
+
 
 def get_weather_data(city, forecast_days):
     """
@@ -32,12 +43,8 @@ def get_weather_data(city, forecast_days):
         # Convert response data to JSON format
         data = response.json()
 
-        # Extract weather data for the specified number of days
-        # Calculate the number of intervals (observations) based on the number of days
-        # By default theres 40 intervals cz 5 days, and 5 * 8 = 40
-        # 8 intervals per day (every 3 hours, so 1 day: 24h / 3h = 8)
-        intervals_per_day = 8
-        num_intervals = forecast_days * intervals_per_day
+        # Calculate the number of intervals (observations) based on the number of forecast days
+        num_intervals = forecast_days * INTERVALS_PER_DAY
 
         # Filter the data to include only the required number of intervals
         filtered_data = data["list"][:num_intervals]
