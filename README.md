@@ -31,12 +31,10 @@ Ensure you have a valid [OpenWeatherMap](https://openweathermap.org/) API key an
 ## Contributing:
 - Contributions to enhance existing applications or add new ones are welcome. Please fork the repository, make your changes, and submit a pull request.
 
-## License:
-- This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-
 ## Author
 - Emad &nbsp; E>
   
   [<img src="https://img.shields.io/badge/GitHub-Profile-blue?logo=github" width="150">](https://github.com/emads22)
 
-  
+## License
+This project is licensed under the [MIT License](LICENSE).
