@@ -24,4 +24,4 @@ INTERVALS_PER_DAY = 8
 
 
 ASSETS_DIR = Path('./assets')
-IMAGES_DIR = ASSETS_DIR / "images"
+IMAGES_DIR = ASSETS_DIR / "icons"
