@@ -1,35 +1,40 @@
-# Weather Forecast Data Dashboard
+# Weather Forecast App
 
-This Weather Forecast Data Dashboard is a web application built using Streamlit and Plotly Express. It allows users to visualize weather forecast data for the next few days based on the city input provided.
+## Overview
+Weather Forecast App is a simple application built using Streamlit and Plotly that provides weather forecast data for the next few days. It allows users to input a city name and select the number of forecast days to view the temperature and sky conditions.
 
 ## Features
+- **Interactive Interface**: Users can input a city name and select the number of forecast days using sliders and dropdown menus.
+- **Temperature Visualization**: The app displays a line plot showing the temperature forecast for the selected city and days.
+- **Sky Condition Visualization**: Users can view images representing the sky condition forecast for each interval of the selected days.
 
-- **Temperature Visualization**: View the temperature forecast for the selected city over the next few days.
-- **Sky Condition Visualization**: View the sky condition forecast for the selected city over the next few days, represented by corresponding weather icons.
-- **Interactive User Interface**: User-friendly interface with input fields for selecting the city and number of forecast days.
-- **Sample Data Display**: Option to display sample weather data if API data retrieval fails.
+## Setup
+1. Clone the repository.
+2. Ensure Python 3.x is installed.
+3. Install the required dependencies using `pip install -r requirements.txt`.
+4. Obtain an API key from [OpenWeatherMap API](https://openweathermap.org/api) by signing up for an account and subscribing to their API services.
+5. Configure the necessary parameters such as the obtained API key in `constants.py`.
+   - Set the API key as the value of `OPENWEATHERMAP_API_KEY`.
+6. Run the script using `streamlit run main.py`.
 
-## How to Use
+## Usage
+1. Run the script using `streamlit run main.py`.
+2. Enter the name of the city for which you want to view the weather forecast.
+3. Use the slider to select the number of days for the forecast.
+4. Choose whether to view temperature or sky condition data.
+5. The app will display the weather forecast accordingly.
 
-1. Install the necessary dependencies by running `pip install -r requirements.txt`.
-2. Run the `main.py` script using Streamlit: `streamlit run main.py`.
-3. Input the desired city name and select the number of forecast days using the provided sliders and dropdowns.
-4. Choose whether to view temperature or sky condition data using the dropdown menu.
-5. View the visualization of the weather forecast data for the selected city.
+## OpenWeatherMap API
+- Weather Forecast App utilizes the OpenWeatherMap API to retrieve weather data. This API provides current weather data, forecasts, and historical weather data for any location. By signing up for an account and subscribing to their API services, users can obtain an API key required for accessing the data.
+- The data returned from the OpenWeatherMap API is structured in intervals of every 3 hours for up to 5 days. By default, there are 40 intervals, representing 5 days of forecast data.
+    1. To process the data, the total number of intervals/observations for 5 days is obtained, which is 40 by default.
+    2. The number of intervals (observations) per day is calculated by dividing the total number of intervals by the number of hours in a day (24). Since there is an interval every 3 hours, there are 8 intervals per day.
 
-## Configuration
-
-Ensure you have a valid [OpenWeatherMap](https://openweathermap.org/) API key and set it as an environment variable named `OPENWEATHERMAP_API_KEY` in a `.env` file located in the root directory of the project.
-
-## Dependencies
-
-- Streamlit
-- Plotly Express
-- Requests
-- Python-dotenv
-
-## Contributing:
-- Contributions to enhance existing applications or add new ones are welcome. Please fork the repository, make your changes, and submit a pull request.
+## Contributing
+Contributions are welcome! Here are some ways you can contribute to the project:
+- Report bugs and issues
+- Suggest new features or improvements
+- Submit pull requests with bug fixes or enhancements
 
 ## Author
 - Emad &nbsp; E>
@@ -37,4 +42,6 @@ Ensure you have a valid [OpenWeatherMap](https://openweathermap.org/) API key an
   [<img src="https://img.shields.io/badge/GitHub-Profile-blue?logo=github" width="150">](https://github.com/emads22)
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License, which grants permission for free use, modification, distribution, and sublicense of the code, provided that the copyright notice (attributed to [emads22](https://github.com/emads22)) and permission notice are included in all copies or substantial portions of the software. This license is permissive and allows users to utilize the code for both commercial and non-commercial purposes.
+
+Please see the [LICENSE](LICENSE) file for more details.

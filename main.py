@@ -1,12 +1,8 @@
 import streamlit as st
 import plotly.express as px
-from back_end import get_weather_data, INTERVALS_PER_DAY
-from pathlib import Path
+from back_end import get_weather_data
+from constants import *
 from datetime import datetime
-
-
-ASSETS_DIR = Path('./assets')
-IMAGES_DIR = ASSETS_DIR / "images"
 
 
 def get_sample_data(days):

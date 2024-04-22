@@ -12,3 +12,6 @@ __pycache__/
 
 # Ignore User Interface Design folder
 User Interface Design/
+
+# Ignore Exercises folder
+Exercises/
