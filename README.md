@@ -1,12 +1,19 @@
-# Weather Forecast App
+# Forecast Finder
 
 ## Overview
-Weather Forecast App is a simple application built using Streamlit and Plotly that provides weather forecast data for the next few days. It allows users to input a city name and select the number of forecast days to view the temperature and sky conditions.
+Forecast Finder is an intuitive application built with Streamlit and Plotly, designed to provide accurate weather forecast data for the upcoming days. Users can easily input a city name and select the desired number of forecast days to receive detailed information on temperature trends and sky conditions, making it a convenient tool for planning ahead.
 
 ## Features
 - **Interactive Interface**: Users can input a city name and select the number of forecast days using sliders and dropdown menus.
 - **Temperature Visualization**: The app displays a line plot showing the temperature forecast for the selected city and days.
 - **Sky Condition Visualization**: Users can view images representing the sky condition forecast for each interval of the selected days.
+
+## Technologies Used
+- **plotly**: A graphing library for interactive plots.
+- **python-dotenv**: A library for managing environment variables in `.env` files.
+- **requests**: A library for making HTTP requests.
+- **streamlit**: An app framework for creating and sharing data apps.
+- **datetime**: A module for manipulating dates and times.
 
 ## Setup
 1. Clone the repository.
