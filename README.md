@@ -1,7 +1,7 @@
 # Forecast Finder
 
 ## Overview
-Forecast Finder is an intuitive application built with Streamlit and Plotly, designed to provide accurate weather forecast data for the upcoming days. Users can easily input a city name and select the desired number of forecast days to receive detailed information on temperature trends and sky conditions, making it a convenient tool for planning ahead.
+Forecast Finder is an intuitive application built with `Streamlit` and `Plotly`, designed to provide accurate weather forecast data for the upcoming days. Users can easily input a city name and select the desired number of forecast days to receive detailed information on temperature trends and sky conditions, making it a convenient tool for planning ahead.
 
 ## Features
 - **Interactive Interface**: Users can input a city name and select the number of forecast days using sliders and dropdown menus.
