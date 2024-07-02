@@ -57,7 +57,8 @@ def combine_conditions_with_dates(sky_conditions, dates):
 
 
 # Display the title
-st.title("Weather Forecast for the Next Days")
+st.title("Forecast Finder")
+st.subheader("Get accurate weather forecasts for the next few days")
 
 # Collect user input for location
 place_input = st.text_input("Place:", placeholder="Enter a city")
