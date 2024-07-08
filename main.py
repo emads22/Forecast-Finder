@@ -58,6 +58,10 @@ def combine_conditions_with_dates(sky_conditions, dates):
 
 # Display the title
 st.title("Forecast Finder")
+
+# Add logo image from a file
+st.image(str(LOGO_FILE), width=200)
+
 st.subheader("Get accurate weather forecasts for the next few days")
 
 # Collect user input for location

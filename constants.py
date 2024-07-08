@@ -25,3 +25,4 @@ INTERVALS_PER_DAY = 8
 
 ASSETS_DIR = Path('./assets')
 IMAGES_DIR = ASSETS_DIR / "icons"
+LOGO_FILE = ASSETS_DIR / "images" / "Forecast_Finder_logo.png"
